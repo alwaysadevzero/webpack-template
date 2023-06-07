@@ -37,6 +37,5 @@ module.exports = {
             }
         ],
         "max-lines-per-function": ['error', 40],
-        '@typescript-eslint/'
     },
 };

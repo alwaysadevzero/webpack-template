@@ -24,6 +24,9 @@ module.exports = {
     module: { // 
         rules: [
             {
+                test: /\.ts$/, use: 'ts-loader',
+            },
+            {
                 test: /\.html$/i,
                 loader: "html-loader",
             },
@@ -73,5 +76,7 @@ module.exports = {
         //     ],
         //   }),
     ],
-    
+    resolve: {
+            extensions: ['.ts', '.js', '.json'],
+    },
 };
