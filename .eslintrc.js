@@ -5,12 +5,17 @@ module.exports = {
         "node": true,
     },
     "extends": [
-        "eslint:recommended"
+        "eslint:recommended",
+        'airbnb-base',
+        'plugin:prettier/recommended'
     ],
     "parserOptions": {
-        "ecmaVersion": 12,
+        "ecmaVersion": 'latest',
         "sourceType": "module",
     },
+    "plugins": ["prettier"],
     "rules": {
+        'import/extensions': "off",
+        "prettier/prettier": "error",
     },
 };
